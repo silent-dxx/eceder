@@ -1,0 +1,8 @@
+{
+	"description" : "FEZ scene with moving clouds, animated creatures and day / night cycle. \n\nAdapts to any resolution or aspect ratio \n\nv1.2 - All Animals have unique animations \nv1.1 - Added stars at night, cleaned up \nv1.0 - Released \n\n-- rate this if you want more -- \n\n\nOriginal by Jesper the End https://twitter.com/jespertheend \n\nFEZ by Polytron Corporation",
+	"file" : "index.html",
+	"preview" : "preview.jpg",
+	"tags" : [ "Game", "Nature", "Multi-monitor optimized" ],
+	"title" : "FEZ Day and Night",
+	"type" : "web"
+}

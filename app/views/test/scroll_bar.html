@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll bar test</title>
+    <link href="../css/page.css" type="text/css" rel="stylesheet"/>
+    <link href="../css/class-styles.css" type="text/css" rel="stylesheet"/>
+    <link href="../swiper/swiper.min.css" type="text/css" rel="stylesheet" >
+    <script src="../js/jquery-1.7.1.min.js"></script>
+    <style type="text/css">
+        body {
+            background-image:none;
+            position:static;
+            left:auto;
+            width:1040px;
+            margin-left:0;
+            margin-right:0;
+            text-align:left;
+            user-select: none;
+            padding:0;
+            border:0;
+            margin:0;
+            overflow-x:hidden;
+            overflow-y:hidden;
+        }
+        #scroll_bar {
+            position:absolute;
+            left:40px;
+            top:40px;
+            width:410px;
+            height:30px;
+            overflow:hidden;
+        }
+
+        #scroll_bar_bg_img {
+            position:absolute;
+            left:-30px;
+            top:-30px;
+            width:470px;
+            height:80px;
+        }
+
+        #scroll_bar_bg {
+            position:absolute;
+            left:0px;
+            top:6px;
+            width:410px;
+            height:20px;
+        }
+
+        #scroll_foreground_div {
+            position:absolute;
+            left:0px;
+            top:0px;
+            width:15px;
+            height:18px;
+            background:inherit;
+            background-color:rgba(0, 157, 217, 1);
+            border:none;
+            border-radius:120px;
+            -moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.349019607843137);
+            -webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.349019607843137);
+            box-shadow:0px 0px 10px rgba(0, 0, 0, 0.349019607843137);
+        }
+
+        #scroll_foreground {
+            position:absolute;
+            left:1px;
+            top:7px;
+            width:15px;
+            height:18px;
+        }
+
+        #scroll_drag_button_img {
+            position:absolute;
+            left:-10px;
+            top:-10px;
+            width:50px;
+            height:50px;
+        }
+
+        #scroll_drag_button {
+            position:absolute;
+            left:0px;
+            top:0px;
+            width:30px;
+            height:30px;
+        }
+
+        #volume_value {
+            position:absolute;
+            left:2px;
+            top:7px;
+            width:26px;
+            /*visibility:hidden;*/
+            word-wrap:break-word;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="scroll_bar" class="ax_default">
+    <!-- background (Rectangle) -->
+    <div id="scroll_bar_bg" class="ax_default box_1" data-label="background">
+        <img id="scroll_bar_bg_img" class="img " src="../images/background_u79.png"/>
+    </div>
+
+    <!-- current (Rectangle) -->
+    <div id="scroll_foreground" class="ax_default box_1" data-label="current">
+        <div id="scroll_foreground_div" class=""></div>
+    </div>
+
+    <!-- roundState (Dynamic panel) -->
+    <!-- round (Rectangle) -->
+    <div id="scroll_drag_button" class="ax_default box_1" data-label="round">
+        <img id="scroll_drag_button_img" class="img " src="../images/round_u84.png"/>
+        <!-- volume value () -->
+        <div id="volume_value" class="text">
+            <p><span>0</span></p>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function() {
+        // 音量滑动条
+        var volume_value = 0;
+
+        var scroll_left = 0;
+        var scroll_width = 0;
+
+        var mouse_event_state = 0;
+
+        var hk_left = 0;
+        var hk_width = 0;
+
+        var gl_X = 0;
+
+        $('#scroll_bar').mousedown(function (e) {
+            scroll_left  = $('#scroll_bar').offset().left;
+            scroll_width = $('#scroll_bar').width();
+            hk_left      = $('#scroll_drag_button').offset().left;
+            hk_width     = $('#scroll_drag_button').width();
+
+            gl_X = e.pageX;
+            //console.log("scroll_left: " + button_left);
+
+            if(gl_X <= hk_width / 2 + scroll_left) {
+                gl_X = hk_width / 2 + scroll_left;
+            } else if(gl_X >= scroll_width - hk_width / 2 + scroll_left) {
+                gl_X = scroll_width - hk_width / 2 + scroll_left;
+                console.log(gl_X + " " + e.pageX);
+            }
+            hk_left = gl_X - scroll_left - hk_width / 2;
+
+            volume_value = Math.round((hk_left / (scroll_width - hk_width)) * 100);
+
+            //console.log(kh_left);
+            $("#scroll_drag_button").css("left", hk_left);
+            $("#scroll_foreground_div").css("width", gl_X - scroll_left);
+            $("#volume_value p span").text(volume_value);
+        });
+        $('#scroll_drag_button').mousedown(function (e) {
+            scroll_left = $('#scroll_bar').offset().left;
+            //console.log("button_left: " + button_left);
+            mouse_event_state = 1;
+        });
+        $(document).mouseup(function () {
+            mouse_event_state = 0;
+        });
+        $(document).mousemove(function (e) {
+            if (mouse_event_state == 1) {
+                scroll_left  = $('#scroll_bar').offset().left;
+                scroll_width = $('#scroll_bar').width();
+                hk_left      = $('#scroll_drag_button').offset().left;
+                hk_width     = $('#scroll_drag_button').width();
+
+                gl_X = e.pageX;
+                //console.log("scroll_left: " + button_left);
+
+                if(gl_X <= hk_width / 2 + scroll_left) {
+                    gl_X = hk_width / 2 + scroll_left;
+                } else if(gl_X >= scroll_width - hk_width / 2 + scroll_left) {
+                    gl_X = scroll_width - hk_width / 2 + scroll_left;
+                    console.log(gl_X + " " + e.pageX);
+                }
+                hk_left = gl_X - scroll_left - hk_width / 2;
+
+                volume_value = Math.round((hk_left / (scroll_width - hk_width)) * 100);
+
+                //console.log(kh_left);
+                $("#scroll_drag_button").css("left", hk_left);
+                $("#scroll_foreground_div").css("width", gl_X - scroll_left);
+                $("#volume_value p span").text(volume_value);
+            }
+        });
+    });
+</script>
+</body>
+</html>

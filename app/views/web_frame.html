@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>HTML5</title>
+
+<style>
+	body {
+		padding:0;  /*去除内边距*/
+		border:0;   /*去除边框*/
+		margin:0;   /*去除外边距*/
+		overflow-x:hidden;
+		overflow-y:hidden;
+	}
+	.main_iframe {
+		padding:0;  /*去除内边距*/
+		border:0;   /*去除边框*/
+		margin:0;   /*去除外边距*/
+		frameBorder:0;
+		scrolling:no;
+		width:100%;
+	}
+</style>
+
+<script type="text/javascript" language="javascript">
+	function changeFrameHeight(){
+	var ifm= document.getElementById("iframepage"); 
+		ifm.height=document.documentElement.clientHeight;
+	}
+	window.onload=function(){  
+		changeFrameHeight();  
+	} 
+</script>
+
+</head>
+	<body>
+		<!-- <iframe class="main_iframe" src="video_window.html" id="iframepage"></iframe> -->
+		<!-- <iframe class="main_iframe" src="..\..\workapace\785216588\index.html" id="iframepage"></iframe> -->
+		<!-- <iframe class="main_iframe" src="..\..\workapace\835186492\index.html" id="iframepage"></iframe> -->
+		<iframe class="main_iframe" src="..\..\workapace\the_matrix\index.html" id="iframepage"></iframe>
+	</body>
+	<script	>
+        try {
+            const ipc = require('electron').ipcRenderer;
+            // 发送网页打开完成消息
+            ipc.send('web-frame-opend');
+        } catch (err) {
+            txt = "There was an error on this page.\n\n";
+            txt += "Error description: " + err.message + "\n\n";
+            console.log(txt);
+        }
+	</script>
+</html>

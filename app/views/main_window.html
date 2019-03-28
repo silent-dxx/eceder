@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Eceder</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="css/page.css" type="text/css" rel="stylesheet"/>
+    <link href="css/class-styles.css" type="text/css" rel="stylesheet"/>
+    <link href="css/id-styles.css" type="text/css" rel="stylesheet"/>
+    <link href="swiper/swiper.min.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body ondragstart="return false;">
+<div id="base" class="">
+
+    <!-- Main frame background - shadow (Rectangle) -->
+    <div id="main_bg_container" class="ax_default box_2" data-label="Main frame background - shadow">
+        <div id="main_bg" class=""></div>
+    </div>
+
+    <!-- Right workspace background (Rectangle) -->
+    <div id="right_ws_bg_container" class="ax_default box_1" data-label="Right workspace background">
+        <div id="right_ws_bg" class=""></div>
+    </div>
+
+    <!-- Main_lable (Rectangle) -->
+    <div id="main_lable_container" class="ax_default level_1_header" data-label="Main_lable">
+
+        <div id="main_lable" class="text">
+            <p><span>Dashboard</span></p>
+        </div>
+    </div>
+
+    <!-- Functional area (Group) -->
+    <div id="functional_area" class="ax_default" data-label="Functional area">
+
+        <!-- Left_background (Picture) -->
+        <div id="left_background_container" class="ax_default image" data-label="Left_background">
+            <img id="left_background" class="img" src="images/left_background_u7.png"/>
+        </div>
+
+        <!-- Improre your PC (Rectangle) -->
+        <div id="marked_words_container" class="ax_default box_1" data-label="Improre your PC">
+            <div id="marked_words_bg" class=""></div>
+            <!-- Unnamed () -->
+            <div id="marked_words" class="text">
+                <p><span>Improre your PC</span></p>
+            </div>
+        </div>
+
+        <!-- About (Group) -->
+        <div id="about_button" class="ax_default" data-label="About">
+
+            <!-- Item_4 (Rectangle) -->
+            <div id="about_rectangle" class="ax_default box_1" data-label="Item_4">
+                <div id="about_rectangle_bg" class=""></div>
+            </div>
+
+            <!-- about_icon (Picture) -->
+            <div id="about_icon" class="ax_default image">
+                <img id="about_icon_img" class="img " src="images/u14.png"/>
+            </div>
+
+            <!-- about_text (Rectangle) -->
+            <div id="about_text_container" class="ax_default level_1_header">
+                <!-- Unnamed () -->
+                <div id="u17 about_text" class="text">
+                    <p><span>About</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Setting (Group) -->
+        <div id="setting_button" class="ax_default" data-label="Setting">
+
+            <!-- Item_3 (Rectangle) -->
+            <div id="setting_rectangle" class="ax_default box_1" data-label="Item_3">
+                <div id="setting_rectangle_bg" class=""></div>
+            </div>
+
+            <!-- setting_icon (Picture) -->
+            <div id="setting_icon" class="ax_default image">
+                <img id="setting_icon_img" class="img " src="images/u21.png"/>
+            </div>
+
+            <!-- setting_text (Rectangle) -->
+            <div id="setting_text_container" class="ax_default level_1_header">
+                <div id="u24 setting_text" class="text">
+                    <p><span>Setting</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Make (Group) -->
+        <div id="make_button" class="ax_default" data-label="Make">
+
+            <!-- Item_2 (Rectangle) -->
+            <div id="make_rectangle" class="ax_default box_1" data-label="Item_2">
+                <div id="make_rectangle_bg" class=""></div>
+            </div>
+
+            <!-- make_text (Rectangle) -->
+            <div id="make_text_container" class="ax_default level_1_header">
+                <div id="make_text" class="text">
+                    <p><span>Make</span></p>
+                </div>
+            </div>
+
+            <!-- make_icon (Picture) -->
+            <div id="make_icon" class="ax_default image">
+                <img id="make_icon_img" class="img " src="images/u30.png"/>
+            </div>
+        </div>
+
+        <!-- Dashboard (Group) -->
+        <div id="dashboard_button" class="ax_default" data-label="Dashboard">
+
+            <!-- Item_1 (Rectangle) -->
+            <div id="dashboard_rectangle" class="ax_default box_1" data-label="Item_1">
+                <div id="dashboard_rectangle_bg" class=""></div>
+            </div>
+
+            <!-- dashboard_icon (Picture) -->
+            <div id="dashboard_icon" class="ax_default image">
+                <img id="dashboard_icon_img" class="img " src="images/u35.png"/>
+            </div>
+
+            <!-- dashboard_text (Rectangle) -->
+            <div id="dashboard_text_container" class="ax_default level_1_header">
+                <div id="dashboard_text" class="text">
+                    <p><span>Dashboard</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo (Picture) -->
+        <div id="logo_container" class="ax_default image" data-label="Logo">
+            <img id="logo_img" class="img " src="images/logo_u39.png"/>
+        </div>
+    </div>
+
+    <!-- Main_Frame	(Dynamic panel) -->
+    <div id="main_frame" class="ax_default" data-label="Main_Frame ">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div id="frame_state0" class="swiper-slide" data-label="Dashnoard">
+                    <div id="frame_state0_content" class="panel_state_content">
+
+                        <!-- Icon display area (Dynamic panel) -->
+                        <div id="item_area" class="ax_default" data-label="Icon display area">
+                            <div id="item_area_panel" class="panel_state" data-label="Icon panel">
+                                <div id="item_area_panel_content" class="panel_state_content">
+
+<!--
+                                    &lt;!&ndash; Icon subkey (Group) &ndash;&gt;
+                                    <div id="item_subkey" class="ax_default" data-label="Icon subkey">
+                                        &lt;!&ndash; Icon_bg_image (Picture) &ndash;&gt;
+                                        <div id="icon_bg" class="ax_default image" data-label="Icon_bg_image">
+                                            <img id="icon_bg_img" class="img " src="images/icon_bg_image_u45.png"/>
+                                        </div>
+
+                                        &lt;!&ndash; Icon_title (Rectangle) &ndash;&gt;
+                                        <div id="icon_title" class="ax_default box_1" data-label="Icon_title">
+                                            <div id="icon_title_bg" class=""></div>
+                                            &lt;!&ndash; Unnamed () &ndash;&gt;
+                                            <div id="icon_title_text" class="text">
+                                                <p><span>FEZ Day and Night</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="frame_state1" class="swiper-slide" data-label="Make">
+                    <div id="frame_state1_content" class="panel_state_content">
+
+                        <!-- Unnamed (Picture) -->
+                        <div id="right_arrow_1" class="ax_default _Picture1">
+                            <img class="right_arrow_img" src="images/right_arrow.svg"/>
+                        </div>
+
+                        <!-- Unnamed (Rectangle) -->
+                        <div id="step_1" class="ax_default level_1_header">
+                            <div id="step_1_rectangle" class=""></div>
+                            <!-- Unnamed () -->
+                            <div id="step_1_text" class="text">
+                                <p><span>Step 1</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Unnamed (Rectangle) -->
+                        <div id="step_2" class="ax_default level_1_header">
+                            <div id="step_2_rectangle" class=""></div>
+                            <!-- Unnamed () -->
+                            <div id="step_2_text" class="text">
+                                <p><span>Step 2</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Unnamed (Rectangle) -->
+                        <div id="step_3" class="ax_default level_1_header">
+                            <div id="step_3_rectangle" class=""></div>
+                            <!-- Unnamed () -->
+                            <div id="step_3_text" class="text">
+                                <p><span>Step 3</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Unnamed (Picture) -->
+                        <div id="right_arrow_2" class="ax_default _Picture1">
+                            <img class="right_arrow_img" src="images/right_arrow.svg"/>
+                        </div>
+
+                        <!-- Unnamed (Rectangle) -->
+                        <div id="make_lable_title" class="ax_default box_1">
+                            <img id="make_lable_title_img" class="img " src="images/u75.png"/>
+                            <!-- Unnamed () -->
+                            <div id="make_lable_title_text" class="text">
+                                <p><span>如何创建新的动态桌面</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Unnamed (Rectangle) -->
+                        <div id="make_lable_1" class="ax_default _文本段落">
+                            <div id="make_lable_1_img" class=""></div>
+                            <!-- Unnamed () -->
+                            <div id="make_lable_1_text" class="text">
+                                <p><span>在工作空间目录下面创建一个新的文件夹</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Unnamed (Rectangle) -->
+                        <div id="make_lable_2" class="ax_default _文本段落">
+                            <div id="make_lable_2_img" class=""></div>
+                            <!-- Unnamed () -->
+                            <div id="make_lable_2_text" class="text">
+                                <p><span>编写packe.json配置文件</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Unnamed (Rectangle) -->
+                        <div id="make_lable_3" class="ax_default _文本段落">
+                            <div id="make_lable_3_img" class=""></div>
+                            <!-- Unnamed () -->
+                            <div id="make_lable_3_text" class="text">
+                                <p><span>重新启动Eceder</span></p>
+                            </div>
+                        </div>
+
+                        <!-- step_1_pic (Picture) -->
+                        <div id="step_1_pic" class="ax_default image">
+                            <img id="step_1_pic_img" class="img " src="images/u67.png"/>
+                        </div>
+
+                        <!-- step_2_pic (Picture) -->
+                        <div id="step_2_pic" class="ax_default image">
+                            <img id="step_2_pic_img" class="img " src="images/u69.png"/>
+                        </div>
+
+                        <!-- step_3_pic (Picture) -->
+                        <div id="step_3_pic" class="ax_default image">
+                            <img id="step_3_pic_img" class="img " src="images/u71.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="frame_state2" class="swiper-slide" data-label="Setting">
+                    <div id="frame_state2_content" class="panel_state_content">
+
+                        <!-- setting_lable_title (Rectangle) -->
+                        <div id="setting_lable_title" class="ax_default box_1">
+                            <img id="setting_lable_title_img" class="img " src="images/u75.png"/>
+                            <!-- Unnamed () -->
+                            <div id="setting_lable_text" class="text">
+                                <p><span>设置</span></p>
+                            </div>
+                        </div>
+
+                        <!-- workspace_address_lable (Rectangle) -->
+                        <div id="setting_lable_1" class="ax_default level_2_header">
+                            <p><span>工作空间地址</span></p>
+                        </div>
+
+                        <!-- workspace_address_input (text) -->
+                        <div id="workspace_address" class="ax_default text_field">
+                            <input id="workspace_address_input" type="text" value=""/>
+                        </div>
+
+                        <!-- browse_button (Rectangle) -->
+                        <div id="browse_button" class="ax_default box_1" data-label="show_btn">
+                            <div id="browse_button_bg" class=""></div>
+                            <!-- Unnamed () -->
+                            <div id="browse_button_text" class="text">
+                                <p><span>浏览</span></p>
+                            </div>
+                        </div>
+
+                        <!-- volume_lable (Rectangle) -->
+                        <div id="setting_lable_2" class="ax_default level_2_header">
+                            <div id="setting_lable_2_text" class="text">
+                                <p><span>音量</span></p>
+                            </div>
+                        </div>
+
+                        <!-- volume_scroll_bar (Dynamic panel) -->
+                        <div id="scroll_bar" class="ax_default">
+                            <!-- background (Rectangle) -->
+                            <div id="scroll_bar_bg" class="ax_default box_1" data-label="background">
+                                <img id="scroll_bar_bg_img" class="img " src="images/background_u79.png"/>
+                            </div>
+
+                            <!-- current (Rectangle) -->
+                            <div id="scroll_foreground" class="ax_default box_1" data-label="current">
+                                <div id="scroll_foreground_div" class=""></div>
+                            </div>
+
+                            <!-- roundState (Dynamic panel) -->
+                            <!-- round (Rectangle) -->
+                            <div id="scroll_drag_button" class="ax_default box_1" data-label="round">
+                                <img id="scroll_drag_button_img" class="img " src="images/round_u84.png"/>
+                                <!-- volume value () -->
+                                <div id="volume_value" class="text">
+                                    <p><span>0</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- other_lable (Rectangle) -->
+                        <div id="setting_lable_3" class="ax_default level_2_header">
+                            <div id="setting_lable_3_text" class="text">
+                                <p><span>其它</span></p>
+                            </div>
+                        </div>
+
+                        <!-- other_lable_bg (Rectangle) -->
+                        <div id="other_lable_bg" class="ax_default box_1">
+                            <img id="other_lable_bg_img" class="img " src="images/u92.png"/>
+                        </div>
+
+                        <!-- check box 1 (复选框) -->
+                        <div id="check_box_1" class="ax_default checkbox">
+                            <label for="check_box_1_input">
+                                <!-- Unnamed () -->
+                                <div id="check_box_1_text" class="text">
+                                    <p><span>开机启动</span></p>
+                                </div>
+                            </label>
+                            <input id="check_box_1_input" type="checkbox" value="checkbox"/>
+                        </div>
+
+                        <!-- check box 2 (复选框) -->
+                        <div id="check_box_2" class="ax_default checkbox">
+                            <label for="check_box_2_input">
+                                <!-- Unnamed () -->
+                                <div id="check_box_2_text" class="text">
+                                    <p><span>自动换壁纸</span></p>
+                                </div>
+                            </label>
+                            <input id="check_box_2_input" type="checkbox" value="checkbox"/>
+                        </div>
+
+                        <!-- check box 3 (复选框) -->
+                        <div id="check_box_3" class="ax_default checkbox">
+                            <label for="check_box_3_input">
+                                <!-- Unnamed () -->
+                                <div id="check_box_3_text" class="text">
+                                    <p><span>自动更新</span></p>
+                                </div>
+                            </label>
+                            <input id="check_box_3_input" type="checkbox" value="checkbox"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="frame_state3" class="swiper-slide" data-label="About">
+                    <div id="frame_state3_content" class="panel_state_content">
+
+                        <!-- about_title_table (Rectangle) -->
+                        <div id="about_title_table" class="ax_default box_1">
+                            <img id="about_title_table_img" class="img " src="images/u75.png"/>
+                            <div id="about_title_text" class="text">
+                                <p><span>关于</span></p>
+                            </div>
+                        </div>
+
+                        <!-- explain_content (Rectangle) -->
+                        <div id="explain_content" class="ax_default text_paragraph">
+                            <span style="color:#5E5E5E;">Eceder 是一个开源免费的Windows动态桌面App, 它可以为更多喜欢折腾桌面的爱好者提供了一个不错的解决方案,更多详细信息请关注: </span>
+                            <span><a href="https://github.com/silent-dxx/Eceder.git">https://github.com/silent-dxx/Eceder.git</a></span>
+                        </div>
+
+                        <!-- author_content (Rectangle) -->
+                        <div id="author_content" class="ax_default level_3_header">
+                            <p><span>Author: Silent_DXX</span></p>
+                        </div>
+
+                        <!-- current_version (Rectangle) -->
+                        <div id="current_version" class="ax_default level_2_header">
+                            <p><span>当前版本:</span></p>
+                        </div>
+
+                        <!-- version_number (Rectangle) -->
+                        <div id="version_number" class="ax_default level_3_header">
+                            <p><span>v 1.0.0</span></p>
+                        </div>
+
+                        <!-- contact_email (Rectangle) -->
+                        <div id="contact_email" class="ax_default level_3_header">
+                            <div id="contact_email_text" class="text">
+                                <p>email: <a href="mailto:silent_dxx@163.com">silent_dxx@163.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner (Dynamic panel) -->
+    <div id="banner_panel" class="ax_default" data-label="banner">
+        <!-- Eceder logo (Picture) -->
+        <div id="banner_container" class="ax_default image" data-label="Eceder logo">
+            <img id="banner_img" class="img" src="images/eceder_logo_u113.png"/>
+        </div>
+    </div>
+
+    <!-- Move_Layer (Group) -->
+    <div id="move_layer" class="ax_default" data-label="Move_Layer">
+
+        <!-- Move_Layer_R (Rectangle) -->
+        <div id="move_layer_r_container" class="ax_default box_1" data-label="Move_Layer_R"
+             style="-webkit-app-region: drag">
+            <div id="move_layer_r" class=""></div>
+        </div>
+
+        <!-- Move_Layer_L (Rectangle) -->
+        <div id="move_layer_l_container" class="ax_default box_1" data-label="Move_Layer_L"
+             style="-webkit-app-region: drag">
+            <div id="move_layer_l" class=""></div>
+        </div>
+    </div>
+
+    <!-- Close_Button (Group) -->
+    <div id="close_button" class="ax_default" data-label="Close_Button">
+
+        <!-- close_rectangle (Rectangle) -->
+        <div id="close_rectangle" class="ax_default box_1" data-label="max_bg">
+            <div id="close_rectangle_bg" class=""></div>
+        </div>
+
+        <!-- close_icon (Picture) -->
+        <div id="close_icon" class="ax_default _Picture1">
+            <img id="close_icon_img" class="img " src="images/u123.svg"/>
+        </div>
+    </div>
+
+    <!-- Min_Button (Group) -->
+    <div id="min_button" class="ax_default" data-label="Min_Button">
+
+        <!-- min_rectangle (Rectangle) -->
+        <div id="min_rectangle" class="ax_default box_1" data-label="min_bg">
+            <div id="min_rectangle_bg" class=""></div>
+        </div>
+
+        <!-- Unnamed (Picture) -->
+        <div id="min_icon" class="ax_default _Picture1">
+            <img id="min_icon_img" class="img " src="images/u128.svg"/>
+        </div>
+    </div>
+</div>
+
+<script src="swiper/swiper.jquery.min.js"></script>
+<script src="js/main-script.js"></script>
+
+<script>
+    /*
+     每个图标的位置
+        N = [1 -> +∞]
+        xStep = (N - 1) % 4;
+        yStep = parseInt((N - 1) / 4);
+
+        X = xStep * 170
+        Y = yStep * 170
+     */
+    function Add_Item_panel(elm) {
+        var item = elm.index - 1;
+        var xStep, yStep;
+        var elm_top, elm_left;
+        xStep = item % 4;
+        yStep = parseInt(item / 4);
+        elm_left = xStep * 170;
+        elm_top = yStep * 170;
+        //console.log("item" + item + " xStep: " + xStep + " yStep: " + yStep + " elm_left: " + elm_left + " elm_top: " + elm_top);
+        $("#item_area_panel_content").append('' +
+            '<div id="item' + item + '">' +
+            '<div id="item_subkey" class="ax_default" data-label="Icon subkey">' +
+            '<!-- Icon_bg_image (Picture) -->' +
+            '<div id="icon_bg" class="ax_default image" data-label="Icon_bg_image">' +
+            '<img id="icon_bg_img" class="img " src="images/icon_bg_image_u45.png"/>' +
+            '</div>' +
+
+            '<!-- Icon_title (Rectangle) -->' +
+            '<div id="icon_title" class="ax_default box_1" data-label="Icon_title">' +
+            '<div id="icon_title_bg" class=""></div>' +
+            '<!-- Unnamed () -->' +
+            '<div id="icon_title_text" class="text">' +
+            '<p><span class="icon_title_text_p">' + elm.icon_title_text +'</span></p>' +
+            '</div>' +
+            '</div>' +
+            '</div>'
+        );
+
+        $("#item_area_panel_content #item" + item +" #item_subkey").css("left", elm_left);
+        $("#item_area_panel_content #item" + item +" #item_subkey").css("top", elm_top);
+
+        Button_press_effect("item" + item, "item" + item +" #item_subkey", 1, 0.8, 0.5);
+    }
+
+    var elm = new Object();
+    elm.icon_title_text = "FEZ Day and Night";
+    elm.index = 0;
+
+
+    for (var i = 1;i <= 50; i++){
+        elm.index = i;
+        Add_Item_panel(elm);
+    }
+
+</script>
+<script>
+    function sleep(sleepTime) {
+        for(var start = +new Date; +new Date - start <= sleepTime; ) { }
+    }
+    try {
+        const ipc = require('electron').ipcRenderer;
+
+        // 发送网页打开完成消息
+        sleep(2000);
+        ipc.send('main-window-opend');
+
+        // 绑定图标点击事件
+        $("#item0").delegate('#item_subkey', 'click', function () {
+            ipc.send('web-frame-show', [1, "c:\\workspace\\"]);
+        });
+
+        // 绑定最小化
+        $("#base").delegate('#min_button', 'click', function () {
+            ipc.send('main-window-min');
+        });
+
+        // 绑定关闭
+        $("#base").delegate('#close_button', 'click', function () {
+            ipc.send('main-window-close');
+        });
+
+    } catch (err) {
+        txt = "There was an error on this page.\n\n";
+        txt += "Error description: " + err.message + "\n\n";
+        console.log(txt);
+    }
+
+</script>
+</body>
+</html>
